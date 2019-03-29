@@ -1,68 +1,77 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <!-- <link href="css/bootstrap.css" rel="sylesheet" type="text/css"> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     <title>TrackSuggester</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>What is the best track for me?</h1>
-      <p>In an ideal world, your choice of programming language shouldn’t matter. Most of the popular languages share the same basic concepts, to the untrained eye most of them look the same, and let you achieve more or less the same outcome. From a developer’s perspective, a programming language is a tool and choosing the right one will influence one’s career, economic prospects, and future happiness. Our quiz will give some general guidance what will work for you best</p>
-      <img src="img/img1.jpg" alt="image">
-        <form id="trackspectrum">
-          <div class="form-group">
+</head>
+<body>
+<div class="container">
+    <h1>What is the best track for me?</h1>
+    <p>In an ideal world, your choice of programming language shouldn’t matter. Most of the popular languages share the
+        same basic concepts, to the untrained eye most of them look the same, and let you achieve more or less the same
+        outcome. Our quiz will give some general guidance what will work for you best.</p>
+    <img src="img/img1.jpg" alt="image">
+    <form id="trackspectrum">
+        <div class="form-group">
             <label for="question1">Design or functionality?</label>
             <select id="question1">
-          <option value="-4">Design</option>
-          <option value="0">Functionality</option>
-          <option value="4">Both</option>
+                <option value="-4">Design</option>
+                <option value="0">Functionality</option>
+                <option value="4">Both</option>
             </select>
-        </form>
-        <div class="form-group">
-        <label for="question2">What sounds better?</label>
-        <select id="question2">
-          <option value="-4">Design</option>
-          <option value="0">.Net</option>
-          <option value="4">Android</option>
         </div>
-        </select>
-        <div class="form-group">
-        <label for="question3">What do you want to specialize in?</label>
-        <select id="question3">
-          <option value="-4">GUI</option>
-          <option value="0">web development</option>
-          <option value="4"> Mobile development</option>
-        </div>
-        </select>
 
         <div class="form-group">
-        <label for="question4">Where do yo want to build?</label>
-        <select id="question4">
-          <option value="-4">web application</option>
-          <option value="0">game</option>
-          <option value="4">mobile application</option>
-        </div>
-        </select>
+            <label for="question2">What sounds better?</label>
+            <select id="question2">
+                <option value="-4">Design</option>
+                <option value="0">.Net</option>
+                <option value="4">Android</option>
+            </select>
+            <div class="form-group">
+                <label for="question3">What do you want to specialize in?</label>
+                <select id="question3">
+                    <option value="-4">GUI</option>
+                    <option value="0">web development</option>
+                    <option value="4"> Mobile development</option>
+                </select>
+            </div>
 
-        <div class="form-group">
-        <label for="question5">How much money do you want to earn?</label>
-        <select id="question5">
-          <option value="-4">150k</option>
-          <option value="0">50k</option>
-          <option value="4">100k</option>
-        </div>
-        </select>
 
-        <button type="submit" class="btn btn-info">Get your results</button>
-      </form>
-      <div id="result">
+            <div class="form-group">
+                <label for="question4">Where do yo want to build?</label>
+                <select id="question4">
+                    <option value="-4">web application</option>
+                    <option value="0">game</option>
+                    <option value="4">mobile application</option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <label for="question5">How much money do you want to earn?</label>
+                <select id="question5">
+                    <option value="-4">150k</option>
+                    <option value="0">50k</option>
+                    <option value="4">100k</option>
+                </select>
+            </div>
+
+
+            <button type="submit" class="btn btn-info">Get your results</button>
+    </form>
+    <div id="result">
         <p>Your are destined to learn <span id="track"></span>.</p>
-      </div>
     </div>
-  </body>
-  </html>
+</div>
+</div>
+</body>
+</html>
