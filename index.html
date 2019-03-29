@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <!-- <link href="css/bootstrap.css" rel="sylesheet" type="text/css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -11,52 +11,53 @@
   </head>
   <body>
     <div class="container">
-    <h1>What is the best track for me?</h1>
-      <form id="trackspectrum">
-        <div class="form-group">
-        <label for="question1">Design or functionality?</label>
-        <select id="question1">
+      <h1>What is the best track for me?</h1>
+      <p>In an ideal world, your choice of programming language shouldn’t matter. Most of the popular languages share the same basic concepts, to the untrained eye most of them look the same, and let you achieve more or less the same outcome. From a developer’s perspective, a programming language is a tool and choosing the right one will influence one’s career, economic prospects, and future happiness. Our quiz will give some general guidance what will work for you best</p>
+      <img src="img/img1.jpg" alt="image">
+        <form id="trackspectrum">
+          <div class="form-group">
+            <label for="question1">Design or functionality?</label>
+            <select id="question1">
           <option value="-4">Design</option>
           <option value="0">Functionality</option>
           <option value="4">Both</option>
-        </select>
-        </div>
-
+            </select>
+        </form>
         <div class="form-group">
         <label for="question2">What sounds better?</label>
         <select id="question2">
           <option value="-4">Design</option>
           <option value="0">.Net</option>
           <option value="4">Android</option>
-      </select>
-          </div>
+        </div>
+        </select>
         <div class="form-group">
         <label for="question3">What do you want to specialize in?</label>
         <select id="question3">
           <option value="-4">GUI</option>
           <option value="0">web development</option>
           <option value="4"> Mobile development</option>
-
-        </select>
         </div>
+        </select>
+
         <div class="form-group">
         <label for="question4">Where do yo want to build?</label>
         <select id="question4">
           <option value="-4">web application</option>
           <option value="0">game</option>
           <option value="4">mobile application</option>
-
-        </select>
         </div>
+        </select>
+
         <div class="form-group">
         <label for="question5">How much money do you want to earn?</label>
         <select id="question5">
           <option value="-4">150k</option>
           <option value="0">50k</option>
           <option value="4">100k</option>
-
-        </select>
         </div>
+        </select>
+
         <button type="submit" class="btn btn-info">Get your results</button>
       </form>
       <div id="result">
